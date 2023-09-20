@@ -123,6 +123,7 @@ body {
 nav {
 	background-color: #1b263bb7;
 	color: #e0e1dd;
+	flex: 1;
 }
 
 #name {
@@ -151,7 +152,7 @@ nav {
 
 .line {
 	border: 1px solid #778da922;
-	width: 70vw;
+	max-width: 70vw;
 	margin-top: 1rem;
 	margin-bottom: 6rem;
 }
