@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Rubik:wght@400;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+html {
+	scroll-behavior: smooth;
+}
+ /* width */
+::-webkit-scrollbar {
+  width: 3px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #0d1b2a;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #006d77;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+} 
+
+
+body {
+    font-family: Roboto, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	background-color: #0d1b2a;
+}
+
+#info-container {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+#first {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 700;
+    font-size: 3.5rem;
+    height: 100dvh;
+    display: flex;
+	flex-direction: column;
+    justify-content: center;
+    align-items: center;
+	background-color: #0d1b2a;
+	color: #e0e1dd;
+}
+
+#first-btn {
+	border: 2px solid #006d77;
+	border-radius: 8px;
+	padding: 8px 16px;
+	font-weight: 400;
+	
+	background: linear-gradient(to left, #0d1b2a 50%, #006d77 50%) right;
+	background-size: 200% 100%;
+	transition: background-position 0.2s ease-out;
+}
+
+#first-btn:hover {
+	background-position: left;
+}
+
+#hi2 {
+	font-weight: 400;
+	font-size: 3rem;
+	color: #778da9;
+}
+
+nav {
+	background-color: #1b263bb7;
+	color: #e0e1dd;
+}
+
+#name {
+	color: #006d77;
+}
+
+#main {
+	background-color: #0d1b2a;
+	color: #e0e1dd;
+}
+
+.head {
+	font-family: Rubik;
+	background: linear-gradient(to right, #e0e1dd , #778da9) left;
+
+  	-webkit-background-clip: text;
+  	-webkit-text-fill-color: transparent;
+	transition: all 0.5s ease-in;
+}
+
+.head:hover {
+	background: linear-gradient(to left, #e0e1dd, #778da9) right;
+  	-webkit-background-clip: text;
+  	-webkit-text-fill-color: transparent;
+}
+
+.line {
+	border: 1px solid #778da922;
+	width: 70vw;
+	margin-top: 1rem;
+	margin-bottom: 6rem;
+}
+
+#sub-about {
+	color: #006d77;
+}
+
+#tech-icon {
+	margin-bottom: 4rem;
+	transition: all 0.1s ease-in;
+}
+
+#tech-icon:hover {
+	transform: translateY(-10px);
+}
+
+.col {
+	margin-right: 4rem;
+}
+
+.project-card {
+	display: flex;
+	justify-content: space-evenly;
+	width: 90vw;
+	font-size: medium;
+	margin-bottom: 8rem;
+}
+
+.secondary-head {
+	font-size: 2rem;
+	font-weight: 700;
+	margin-bottom: 1.5rem;
+}
+
+.sec-line {
+	border: 1px solid #778da922;
+	width: 30vw;
+	margin-top: 1rem;
+}
+
+.summary-text {
+	font-size: 1.25rem;
+	line-height: 1.75rem;
+	width: 30vw;
+	margin-bottom: 4rem;
+}
+
+.summary {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+#text {
+	font-family: Rubik, sans-serif;
+}
+
+a {
+	font-size: medium;
+	font-weight: 600;
+	display: inline-block;
+	position: relative;
+	padding: 4px 0px;
+}
+
+.hoverline::after {
+	content: '';
+	position: absolute;
+	width: 100%;
+	transform: scaleX(0);
+	height: 3px;
+	bottom: 0;
+	left: 0;
+	background-color: #006d77;
+	transform-origin: bottom right;
+	transition: transform 0.25s ease-out;
+}
+
+.hoverline:hover::after {
+	transform: scaleX(1);
+	transform-origin: bottom left;
+}
