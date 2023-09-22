@@ -589,6 +589,10 @@ video {
   height: 100vh;
 }
 
+.w-\[100\%\]{
+  width: 100%;
+}
+
 .w-\[80\%\]{
   width: 80%;
 }
@@ -599,10 +603,6 @@ video {
 
 .max-w-\[40vw\]{
   max-width: 40vw;
-}
-
-.max-w-\[80\%\]{
-  max-width: 80%;
 }
 
 .flex-1{
@@ -863,7 +863,7 @@ nav {
   margin-right: 4rem;
 }
 
-#projects {
+#projects, #about {
   width: 80%;
 }
 
