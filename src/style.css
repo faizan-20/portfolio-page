@@ -152,13 +152,14 @@ nav {
 
 .line {
 	border: 1px solid #778da922;
-	max-width: 70vw;
+	width: 70vw;
 	margin-top: 1rem;
 	margin-bottom: 6rem;
+	align-self: flex-start;
 }
 
 #sub-about {
-	color: #006d77;
+	color: #778da9;	
 }
 
 #tech-icon {
@@ -174,12 +175,20 @@ nav {
 	margin-right: 4rem;
 }
 
+#projects {
+	width: 80%;
+}
+
 .project-card {
 	display: flex;
 	justify-content: space-evenly;
-	width: 90vw;
 	font-size: medium;
 	margin-bottom: 8rem;
+}
+
+.screenshot {
+	width: 50%;
+	height: 50%;
 }
 
 .secondary-head {
@@ -199,6 +208,7 @@ nav {
 	line-height: 1.75rem;
 	width: 30vw;
 	margin-bottom: 4rem;
+	color: #778da9;
 }
 
 .summary {
@@ -212,7 +222,6 @@ nav {
 }
 
 a {
-	font-size: medium;
 	font-weight: 600;
 	display: inline-block;
 	position: relative;
@@ -235,4 +244,126 @@ a {
 .hoverline:hover::after {
 	transform: scaleX(1);
 	transform-origin: bottom left;
+}
+
+/* @media (max-width: 1520px) {
+} */
+
+@media (max-width: 1280px) {
+	#about-content {
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: center;
+	}
+	#tech-icon-list {
+		margin-top: 5rem;
+	}
+	#about-p {
+		max-width: 70%;
+	}
+	#sub-about {
+		margin-top: 0;
+	}
+	.line {
+		margin-bottom: 2rem;
+	}
+	#about, #projects, #contact {
+		width: 90%;
+	}
+	.project-card {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	.screenshot {
+		margin-bottom: 5rem;
+	}
+	.summary {
+		width: 80%;
+	}
+	.summary-text {
+		width: auto;
+	}
+}
+
+@media (max-width: 970px) {
+	.summary {
+		width: 100%;
+	}
+	#about-p {
+		max-width: 100%;
+	}
+	.screenshot {
+		width: 80%;
+		height: 80%;
+	}
+}
+
+@media (max-width: 680px) {
+	#info-container {
+		font-size: 2rem;
+	}
+	#hi2 {
+		font-size: 1.5rem;
+	}
+	.head {
+		font-size: 2.5rem;
+	}
+	#about-content {
+		font-size: 1rem;
+		line-height: 1.25rem;
+	}
+	#navHead {
+		font-size: 1.5rem;
+		line-height: normal;
+	}
+	.nav-content {
+		font-size: 1rem;
+	}
+	#sub-about {
+		font-size: 1rem;
+	}
+	#first-btn {
+		font-size: 1rem;
+		padding: 4px 6px;
+	}
+}
+
+@media (max-width: 460px) {
+	#info-container {
+		font-size: 1.5rem;
+	}
+	#hi2 {
+		font-size: 1rem;
+	}
+	.head {
+		font-size: 2rem;
+	}
+	.secondary-head {
+		font-size: 1.5rem;
+	}
+	#navHead {
+		font-size: 1rem;
+		line-height: normal;
+	}
+	.nav-content {
+		margin-left: 0.75rem;
+		font-size: 0.75rem;
+	}
+	#tech-icon {
+		margin-bottom: 2rem;
+	}
+	.col {
+		margin-right: 2rem;
+	}
+	#text {
+		font-size: 1.25rem;
+		line-height: 1.5rem;
+	}
+	#lname {
+		display: none;
+	}
+	#first-btn {
+		padding: 4px 4px;
+	}
 }

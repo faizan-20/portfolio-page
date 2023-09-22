@@ -21,7 +21,7 @@
   <body>
     <div id="root">
       <div id="first">
-        <div id="info-container">
+        <div id="info-container" class="mx-5">
           <div id="hi">Hii, I am <span id="name">Faizan Ahmad</span>.</div>
           <div id="hi2">Full-Stack Developer</div>
         </div>
@@ -36,29 +36,29 @@
             class="flex text-xl justify-around items-center h-12 font-medium sticky top-0"
           >
             <div id="navHead" class="text-3xl font-bold hover:cursor-pointer">
-              Faizan Ahmad
+              Faizan <span id="lname">Ahmad</span>
             </div>
             <div id="navOther" class="flex ml-8 self-center">
-              <div class="ml-4 hover:cursor-pointer"><a class="hoverline" href="#first">Home</a></div>
-              <div class="ml-4 hover:cursor-pointer"><a class="hoverline" href="#about">About</a></div>
-              <div class="ml-4 hover:cursor-pointer"><a class="hoverline" href="#projects">Projects</a></div>
-              <div class="ml-4 hover:cursor-pointer"><a class="hoverline" href="#contact">Contact</a></div>
+              <div class="nav-content ml-4 hover:cursor-pointer"><a class="hoverline" href="#first">Home</a></div>
+              <div class="nav-content ml-4 hover:cursor-pointer"><a class="hoverline" href="#about">About</a></div>
+              <div class="nav-content ml-4 hover:cursor-pointer"><a class="hoverline" href="#projects">Projects</a></div>
+              <div class="nav-content ml-4 hover:cursor-pointer"><a class="hoverline" href="#contact">Contact</a></div>
             </div>
           </nav>
-          <div id="main" class="flex flex-col font-normal justify-center">
+          <div id="main" class="flex flex-col font-normal justify-center items-center">
             <div
               id="about"
-              class="h-screen flex flex-col items-center justify-center"
+              class="h-screen flex flex-col items-center justify-center w-[80%]"
             >
               <div
                 id="about-head"
-                class="head text-6xl font-extrabold self-start ml-[18rem]"
+                class="head text-6xl font-extrabold self-start"
               >
                 About
               </div>
               <div class="line"></div>
-              <div class="flex justify-evenly text-2xl w-[99vw]">
-                <div class="max-w-[40vw]">
+              <div id="about-content" class="flex justify-evenly text-2xl">
+                <div id="about-p" class="max-w-[40vw] lg:w-[80%]">
                   <p>
                     I am a dynamic Full-Stack Developer on an exciting journey
                     through the world of Computer Science Engineering, i have
@@ -72,7 +72,7 @@
                     develop high quality web applications.
                   </p>
                 </div>
-                <div class="flex">
+                <div id="tech-icon-list" class="flex">
                   <div class="col">
                     <div id="tech-icon">
                       <img
@@ -187,15 +187,15 @@
             <div id="projects" class="flex flex-col items-center mt-[6rem]">
               <div
                 id="project-head"
-                class="head text-6xl font-extrabold self-start ml-[18rem]"
+                class="head text-6xl font-extrabold self-start"
               >
                 Projects
               </div>
               <div class="line"></div>
-              <div id="project-list">
+              <div id="project-list" class="flex-1">
                 <div class="project-card">
                   <img
-                    width="700"
+                    class="screenshot"
                     src="./public/members-only.png"
                     alt="project image"
                   />
@@ -210,7 +210,7 @@
                       authentication and join the club using a secret key. They
                       can also create and view messages
                     </div>
-                    <div>
+                    <div class="links">
                       <a
                         class="mr-10 hoverline"
                         href="https://members-only-production-24ab.up.railway.app/ "
@@ -225,7 +225,7 @@
                 </div>
                 <div class="project-card">
                   <img
-                    width="700"
+                    class="screenshot"
                     src="./public/memory-card.png"
                     alt="project image"
                   />
@@ -240,7 +240,7 @@
                       All the cards shuffles after each click making it
                       challenging to not loose.
                     </div>
-                    <div>
+                    <div class="links">
                       <a
                         class="mr-10 hoverline"
                         href="https://faizan-20.github.io/memory-card-game/"
@@ -255,7 +255,7 @@
                 </div>
                 <div class="project-card">
                   <img
-                    width="700"
+                    class="screenshot"
                     src="./public/shopping-cart.png"
                     alt="project image"
                   />
@@ -270,7 +270,7 @@
                       to cart. Users can also see the summary in of their cart
                       items.
                     </div>
-                    <div>
+                    <div class="links">
                       <a
                         class="mr-10 hoverline"
                         href="https://faizan-20.github.io/shopping-cart/"
@@ -290,19 +290,19 @@
             </div>
             <div
               id="contact"
-              class="flex flex-col items-center justify-evenly mt-[6rem] h-screen"
+              class="flex flex-col items-center justify-evenly mt-[6rem] h-screen w-[80%]"
             >
               <div>
                   <div
                     id="contact-head"
-                    class="head text-6xl font-extrabold"
+                    class="head text-6xl font-extrabold 0"
                   >
                     Want to get in touch?
                   </div>
                   <div class="line"></div>
               </div>
               <div class="mt-10">
-                <div id="text" class="w-[30rem] text-2xl font-medium flex">
+                <div id="text" class="max-w-[30rem] text-2xl font-medium flex">
                     Have a question? or an opportunity you'd like to share?
                     Feel free to contact.
                 </div>
