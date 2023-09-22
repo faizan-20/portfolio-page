@@ -621,6 +621,10 @@ video {
   justify-content: center;
 }
 
+.justify-between{
+  justify-content: space-between;
+}
+
 .justify-around{
   justify-content: space-around;
 }
@@ -867,7 +871,7 @@ nav {
   display: flex;
   justify-content: space-evenly;
   font-size: medium;
-  margin-top: 4em;
+  margin-top: 4rem;
 }
 
 .screenshot {
@@ -888,8 +892,8 @@ nav {
 }
 
 .summary-text {
-  font-size: 1.25rem;
-  line-height: 1.75rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
   width: 30vw;
   margin-bottom: 4rem;
   color: #778da9;
@@ -1082,10 +1086,4 @@ a {
 
 .hover\:cursor-pointer:hover{
   cursor: pointer;
-}
-
-@media (min-width: 1024px){
-  .lg\:w-\[80\%\]{
-    width: 80%;
-  }
 }
