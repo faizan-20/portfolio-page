@@ -154,7 +154,6 @@ nav {
 	border: 1px solid #778da922;
 	width: 70vw;
 	margin-top: 1rem;
-	margin-bottom: 6rem;
 	align-self: flex-start;
 }
 
@@ -183,7 +182,7 @@ nav {
 	display: flex;
 	justify-content: space-evenly;
 	font-size: medium;
-	margin-bottom: 8rem;
+	margin-top: 4em;
 }
 
 .screenshot {
