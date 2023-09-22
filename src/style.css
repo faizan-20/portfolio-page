@@ -141,11 +141,10 @@ nav {
 
   	-webkit-background-clip: text;
   	-webkit-text-fill-color: transparent;
-	transition: all 0.5s ease-in;
 }
 
 .head:hover {
-	background: linear-gradient(to left, #e0e1dd, #778da9) right;
+	background: linear-gradient(to right, #778da9, #e0e1dd) left;
   	-webkit-background-clip: text;
   	-webkit-text-fill-color: transparent;
 }
@@ -245,6 +244,10 @@ a {
 	transform-origin: bottom left;
 }
 
+#mail {
+	color: #778da9;
+}
+
 /* @media (max-width: 1520px) {
 } */
 
@@ -264,7 +267,7 @@ a {
 		margin-top: 0;
 	}
 	.line {
-		margin-bottom: 2rem;
+		margin-bottom: 0rem;
 	}
 	#about, #projects, #contact {
 		width: 90%;
@@ -356,13 +359,26 @@ a {
 		margin-right: 2rem;
 	}
 	#text {
-		font-size: 1.25rem;
-		line-height: 1.5rem;
+		font-size: 1rem;
+		line-height: 1.25rem;
 	}
 	#lname {
 		display: none;
 	}
 	#first-btn {
 		padding: 4px 4px;
+	}
+}
+
+@media (max-width: 375px) {
+	.head {
+		font-size: 1.5rem;
+	}
+	.secondary-head {
+		font-size: 1.25rem;
+	}
+	.summary-text {
+		font-size: 0.75rem;
+		line-height: 1rem;
 	}
 }
